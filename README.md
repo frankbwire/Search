@@ -2,6 +2,9 @@
 Database search to give information output.
 
 ***How To Install***
-~Open xampp
+~Open xampp - start Apache and Mysql servers
 ~import database searchdb.sql
-~open localhost/serch.php in browser
+To:
+~register patient localhost/register.php in browser
+~search patient localhost/search.php in browser
+~view database patient localhost/phpmyadmin in browser
