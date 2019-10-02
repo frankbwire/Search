@@ -53,7 +53,7 @@ $sql2="insert into emergency_contacts (patient_id,kin_name,relationship,kin_phon
 
 ?>
 <!--==Author (c)frankline_bwire==-->
-<form class="row tracking_form" action="register.php" method="post" novalidate="novalidate" style="margin-left: 50px">
+<form class="row tracking_form" action="register.php" method="post" novalidate="novalidate" style="margin-left:50px;padding-left:15%;padding-right:15%">
                     <div class="col-md-11 form-group" id="form-title">
                         <p style="background-color: #20c997; font-weight: bold; text-align: center">Patient information</p>
                     </div>
