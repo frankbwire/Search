@@ -1,5 +1,6 @@
 <!--Creating a search button-->
 <!--==Author (c)frankline_bwire==-->
+<h1 style="font-weight:bolder">iSearch</h1>
 <h4 style="width:40%">This database application lets you search for patient information, available in the patient database (searchdb.sql) from different tables and gives accurate output.</h4>
 
 <?php
@@ -42,7 +43,7 @@ if($result == true){
     <br>
     Relationship: <input type="text" value="<?php  echo $result["relationship"]?>" readonly>
     <br>
-    Kni Gender: <input type="text" value="<?php  echo $result["kin_gender"]?>" readonly>
+    Kin Gender: <input type="text" value="<?php  echo $result["kin_gender"]?>" readonly>
 </form>
 <?php
 }
