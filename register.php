@@ -1,6 +1,7 @@
 <!--==Author (c)frankline_bwire==-->
 
 <!--=====REGISTER PATIENT=====-->
+<h1 style="font-weight:bolder">iSearch</h1>
 
 <?php
 include 'db.php';
@@ -42,12 +43,12 @@ $egender=mysqli_real_escape_string($connect,$_POST['egender']);
 $sql="INSERT into patients (patient_id,first_name,middle_name,last_name,patient_dob,patient_email,patient_phone,patient_age,patient_address,patient_city,id_number,patient_gender) VALUES('$pid','$fname','$mname','$lname','$dob','$email','$phone','$age','$address','$city','$idno','$gender')";
 $query=mysqli_query($connect,$sql);
     if(!$query){
-        echo "query failed" . mysqli_error($conn);
+        echo "query failed" . mysqli_error($connect);
     }
 $sql2="insert into emergency_contacts (patient_id,kin_name,relationship,kin_phone,kin_id,kin_gender) values('$pid','$ename','$rel','$ephone','$eidno','$egender') ";
     $query2=mysqli_query($connect,$sql2);
     if(!$query2){
-        echo "query 2 failed" . mysqli_error($conn);
+        echo "query 2 failed" . mysqli_error($connect);
     }
 }
 
@@ -133,7 +134,7 @@ $sql2="insert into emergency_contacts (patient_id,kin_name,relationship,kin_phon
 
                     <div class="col-md-12 form-group" style="text-align: center">
                         <br>
-                        <button type="submit" value="submit" name="register" class="btn submit_btn" onclick="Alert()">Register</button>
+                        <button type="submit" value="submit" name="register" class="btn submit_btn">Register</button>
                         <button type="reset" value="Reset" class="btn submit_btn" style="margin-left: 80px">Reset Form</button>
                     </div>
                 </form>
